@@ -28,7 +28,7 @@ export async function updateProfile(formData: FormData) {
   }
 
   const age = ageRaw ? Number(ageRaw) : undefined;
-  if (ageRaw && (!Number.isInteger(age) || age < 16 || age > 80)) {
+  if (age !== undefined && (!Number.isInteger(age) || age < 16 || age > 80)) {
     redirect("/profile?error=Yaş 16-80 arası olmalı.");
   }
 
