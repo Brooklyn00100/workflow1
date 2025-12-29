@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --sand: #f6f1e8;
+  --clay: #d9c4a3;
+  --ink: #1b1a1c;
+  --ember: #c45a2e;
+  --leaf: #2f7d5b;
+  --sage: #4f6b5d;
+  --sky: #cad8de;
+}
+
+@theme inline {
+  --color-sand: var(--sand);
+  --color-clay: var(--clay);
+  --color-ink: var(--ink);
+  --color-ember: var(--ember);
+  --color-leaf: var(--leaf);
+  --color-sage: var(--sage);
+  --color-sky: var(--sky);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+}
+
+body {
+  background: var(--sand);
+  color: var(--ink);
+  font-family: var(--font-body), sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), serif;
+}
+
+.card {
+  @apply rounded-3xl border border-ink/10 bg-white/70 p-6 shadow-[0_18px_40px_-24px_rgba(27,26,28,0.5)];
+}
+
+.pill {
+  @apply inline-flex items-center rounded-full border border-ink/20 px-3 py-1 text-xs font-medium uppercase tracking-widest;
+}
+
+.btn-primary {
+  @apply rounded-full bg-leaf px-5 py-2 text-sm font-semibold text-white transition hover:bg-leaf/90;
+}
+
+.btn-secondary {
+  @apply rounded-full border border-ink/20 px-4 py-2 text-sm font-semibold text-ink transition hover:border-ink/40;
+}
+
+.star-group {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  gap: 6px;
+}
+
+.star-group input {
+  display: none;
+}
+
+.star-group label {
+  cursor: pointer;
+  color: #d1c7b8;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.star-group input:checked ~ label,
+.star-group label:hover,
+.star-group label:hover ~ label {
+  color: var(--leaf);
+}

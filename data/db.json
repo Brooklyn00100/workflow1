@@ -1,0 +1,100 @@
+{
+  "users": [
+    {
+      "id": "da2aa0f5-522e-4da5-848e-1ac774b128b5",
+      "role": "ADMIN",
+      "name": "Sistem Admin",
+      "city": "İstanbul",
+      "phone": "0000 000 00 00",
+      "email": "admin@workflow.local",
+      "passwordHash": "$2b$10$SlUY67InukfFmHV0bAHgqudIaMZmdLcHNXiQGbhyQA1xqpJIzG8ui",
+      "createdAt": "2025-12-29T17:25:52.384Z"
+    },
+    {
+      "id": "9c7d3614-de17-4283-811a-7df952327835",
+      "role": "EMPLOYER",
+      "name": "Ayşe Kaya",
+      "companyName": "Kampüs Kafe",
+      "city": "Ankara",
+      "phone": "0500 000 00 00",
+      "email": "deneme@isveren.com",
+      "passwordHash": "$2b$10$byCdfkIN/k1wbQdUEO8H6OZy4mPfkG4xVJQfJYfCJgXKz2DxHSPfG",
+      "employerStatus": "APPROVED",
+      "createdAt": "2025-12-29T17:25:52.384Z"
+    },
+    {
+      "id": "9924979a-03a8-4edd-a2da-a34e0b64868c",
+      "role": "STUDENT",
+      "name": "Ece Demir",
+      "city": "Ankara",
+      "phone": "0500 111 11 11",
+      "email": "deneme@ogrenci.com",
+      "passwordHash": "$2b$10$lmRLGb8fjgF5WWRdBGwdgePOcjerzMDGENK4ENaT/cIBkDlJx4a62",
+      "createdAt": "2025-12-29T17:25:52.384Z",
+      "age": 20
+    },
+    {
+      "role": "STUDENT",
+      "name": "AZIMKHAN RAKHYMZHAN",
+      "city": "Aksaray",
+      "phone": "05540214868",
+      "email": "admin@site.com",
+      "passwordHash": "$2b$10$RbfrBig8oSd8r/eOv0WhLuv2K7jBEV7d5xHWJcOFhDiB/v/a58Mta",
+      "id": "5f7b65ab-dfe9-4cb8-948d-88abafb08e9c",
+      "createdAt": "2025-12-29T17:25:52.684Z",
+      "age": 21,
+      "avatarUrl": "/uploads/avatar-1767031711621-fa7173f805915.jpeg"
+    },
+    {
+      "role": "EMPLOYER",
+      "name": "ABDUKARIMOV",
+      "companyName": "Aksaray",
+      "city": "Aksaray",
+      "phone": "05540214868",
+      "email": "isveren@site.com",
+      "passwordHash": "$2b$10$ytsfRBNueMJTtC7mosUL3uhaZANOu1xfsV4E7gEjl58TaD9cuKSxq",
+      "employerStatus": "APPROVED",
+      "id": "89c70907-d592-440f-92ae-8ed73f75ee70",
+      "createdAt": "2025-12-29T17:26:58.099Z",
+      "avatarUrl": "/uploads/avatar-1767030239259-586134f8575678.jpeg",
+      "companyLogoUrl": "/uploads/logo-1767030239261-3942eb40c41e4.png"
+    }
+  ],
+  "jobs": [
+    {
+      "employerId": "89c70907-d592-440f-92ae-8ed73f75ee70",
+      "title": "UI/UX",
+      "city": "Antalya",
+      "startDate": "2025-12-31T00:00:00.000Z",
+      "endDate": "2026-01-06T00:00:00.000Z",
+      "startTime": "09:00",
+      "endTime": "23:30",
+      "dailyWage": 2498,
+      "description": "Site dizayni yapmamiz lazim",
+      "imageUrls": [
+        "/uploads/job-1767032698842-385ce8d3dc292.jpeg",
+        "/uploads/job-1767032698843-2a578868aeeb9.webp",
+        "/uploads/job-1767032698843-68e794f5d9fa8.jpeg",
+        "/uploads/job-1767032698844-4c71f01d839b8.jpeg"
+      ],
+      "isActive": true,
+      "id": "99a26b64-82c6-4849-83d0-33b1b4aaf5a4",
+      "createdAt": "2025-12-29T18:24:58.846Z"
+    }
+  ],
+  "applications": [
+    {
+      "id": "9c86e66f-1d3a-4a34-9a55-5a6059395a76",
+      "jobId": "99a26b64-82c6-4849-83d0-33b1b4aaf5a4",
+      "studentId": "9924979a-03a8-4edd-a2da-a34e0b64868c",
+      "status": "APPROVED",
+      "createdAt": "2025-12-29T19:04:43.803Z",
+      "employerCompleted": true,
+      "employerRating": 5,
+      "employerComment": "Isi cok iyi yapiyor",
+      "studentCompleted": true,
+      "studentRating": 5,
+      "studentComment": "Memnunum"
+    }
+  ]
+}
